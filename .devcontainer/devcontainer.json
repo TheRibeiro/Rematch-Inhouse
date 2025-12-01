@@ -1,7 +1,10 @@
 {
-  "name": "Rematch Elixir",
-  "image": "mcr.microsoft.com/devcontainers/elixir:1",
+  "name": "Rematch Universal",
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
   "features": {
+    "ghcr.io/devcontainers/features/elixir:1": {
+      "version": "1.16.0"
+    },
     "ghcr.io/devcontainers/features/postgresql:1": {
       "version": "latest"
     },
