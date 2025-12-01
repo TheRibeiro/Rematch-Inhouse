@@ -1,17 +1,13 @@
 {
   "name": "Rematch Elixir",
-  "image": "mcr.microsoft.com/devcontainers/elixir:1-1.16",
+  "image": "mcr.microsoft.com/devcontainers/elixir:1",
   "features": {
     "ghcr.io/devcontainers/features/postgresql:1": {
-      "version": "latest"
-    },
-    "ghcr.io/devcontainers/features/python:1": {
       "version": "latest"
     },
     "ghcr.io/devcontainers/features/node:1": {}
   },
   "forwardPorts": [4000],
-  "postCreateCommand": "mix local.hex --force && mix local.rebar --force && mix archive.install hex phx_new --force",
   "customizations": {
     "vscode": {
       "extensions": [
